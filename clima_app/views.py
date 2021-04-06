@@ -9,7 +9,7 @@ from .forms import CityForm
 
 def index(request):
 
-    API_KEY = "Paste your API KEY here"
+    API_KEY = '622707fcbf18c29ba748d73c0bd634c0'
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&APPID=' + API_KEY + '&lang=sp'
 
     err_msg = ''
