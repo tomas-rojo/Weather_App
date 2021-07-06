@@ -51,6 +51,7 @@ def index(request):
 
         city_weather = {
             'city': city.name,
+            'country': r['sys']['country'],
             'temperature': round(r['main']['temp'], 1),
             'feels_like': round(r['main']['feels_like'], 1),
             'description': r['weather'][0]['description'].capitalize(),
